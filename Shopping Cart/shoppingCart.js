@@ -14,24 +14,31 @@ for (var i =0;  i< shop.length; i++) {
 	`
 }
 
-function showDropdown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+
+
+
 
 	//console.log(putin[i] + "\n");
 	for (let i = 0; i < shop.length; i++) {
 		document.getElementsByClassName("addToCartButton")[i].addEventListener("click", addToCart, false)
+			document.getElementById("shoppingCartCounter").innerHTML = shoppingCartCounter;
 	}
 
-let shoppingCartArray = {};
+
+
+let shoppingCartArray = [];
+
 
 function addToCart() {
-	shoppingCartArray.push(shop[i]);
-	
+	var itemID = this.getAttribute("Id");
+	shoppingCartArray.push(itemID);
+	console.log(shoppingCartArray);
+	}
 
-	document.getElementById("shoppingCartCounter").innerHTML = shoppingCartCounter;
 
-}
+
+
+
 
 //create empty object array
 //clicked element goes into object array with .push

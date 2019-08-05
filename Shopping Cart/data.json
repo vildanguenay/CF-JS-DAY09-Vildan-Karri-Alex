@@ -3,23 +3,26 @@ shop = [{
 "CATEGORY": "Laptop",
 "NAME": "Vladimir-Black-edition",
 "PRIZE": "15",
-"Image": "https://i.pinimg.com/originals/5a/a2/df/5aa2df4da7c6ed626c4a49942b937f04.jpg"
+"Image": "https://i.pinimg.com/originals/5a/a2/df/5aa2df4da7c6ed626c4a49942b937f04.jpg",
+"Id": "itemLaptop"
 },
 {
 "CATEGORY": "Headphones",
 "NAME": "Vladimir-Gray-edition",
 "PRIZE": "70",
-"Image": "https://www.focal.com/sites/www.focal.fr/files/shared/catalog/produit/visuel/listen_chic.jpg"
+"Image": "https://www.focal.com/sites/www.focal.fr/files/shared/catalog/produit/visuel/listen_chic.jpg",
+"id": "itemHeadphones"
 },
 {
 "CATEGORY": "Tablet",
 "NAME": "Vladimir-blue-edition",
 "PRIZE": "100",
-"Image": "https://cdn.expert.de/7c/e0/a6/65bb7dcf8291f6e8b5da7336cebb4f5ec5/Abbildung_1063029.png_1000x1000_90-0.jpeg"
+"Image": "https://cdn.expert.de/7c/e0/a6/65bb7dcf8291f6e8b5da7336cebb4f5ec5/Abbildung_1063029.png_1000x1000_90-0.jpeg",
+"Id": "itemTablet"
 },{
 "CATEGORY": "Laptop",
 "NAME": "Vladimir-ultrablack-edition",
 "PRIZE": "20",
 "Image": "https://i.pinimg.com/originals/5a/a2/df/5aa2df4da7c6ed626c4a49942b937f04.jpg",
-
+"Id": "itemLaptop2"
 }]
