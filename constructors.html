@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <h2>JavaScript Object Constructors</h2>
 
 <p id="demo"></p>
@@ -9,24 +5,47 @@
 <script>
 
 
+exercise 1
+
+ways to create empty objects and pass them properties
+
+let NewObject0 = {};
+NewObject0.hairColor = "brown";
+
+//let newObject1 = Object.create(null);
+//newObject1["favFood"] = "pizza";
+
+
+
+console.log(newObject2);
+
+
+//exercise 2 and 3
 
 function Human (eyeColor, age, name, handedness) {
 	this.eyeColor = eyeColor;
 	this.age = age;
 	this.name = name;
 	this.handedness = handedness;
-    this.fullName = function () {
-    return this.name + " is " + handedness;
-}
+    //this.fullName = function () {
+    //return this.name + " is " + handedness; }
 };
 
 
 let Karri = new Human ("blue", 26, "Karri", "Right-handed");
 let Alex = new Human ("green", 20, "Alex", "Left-handed");
 
-console.log(Alex.fullName())
+Human.prototype.fullName = function () { //use nameOfConstructorFunction.prototype.nameOfNewFunction to access properties inside constructor!
+	return this.name + " is " + this.age;
+};
 
-document.getElementById("demo").innerHTML = Alex.fullName(); 
+
+
+console.log(Alex.age)
+
+console.log(Alex.fullName());
+
+//document.getElementById("demo").innerHTML = Alex.fullName(); 
 
 </script>
 
