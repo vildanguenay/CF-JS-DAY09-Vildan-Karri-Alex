@@ -8,13 +8,25 @@
 // basic 1
 // Create an object in JavaScript using all three possible ways.
 
-var person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
-};
-console.log(person.firstName);
+// var person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50,
+//   eyeColor: "blue"
+// };
+// console.log(person.firstName);
+
+var person = new Object ();
+
+        person.firstName = "Jenny";
+        person.lastName = "Doe" ;
+        person.age = 30;
+        person.fullName = function(){
+    return this.firstName + " " + this.lastName;
+        };
+
+         console.log(person.fullName());
+
 </script>
 </body>
 </html>
