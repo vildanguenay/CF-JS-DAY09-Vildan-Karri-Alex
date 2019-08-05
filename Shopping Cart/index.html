@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advance</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="data.json"> </script>
+	<script src="https://kit.fontawesome.com/0b1299b95f.js"></script>
+	<!--async lets you put the script in the head-->
+	<script src="shoppingCart.js" async></script>
+</head>
+<body>
+	<header>
+		<div id="first">
+			<div class="left">
+				<p>+021-95-51-84</p>
+				<p>email@email.com</p>
+				<p>1734 Stonecoal Road</p>
+			</div>
+
+			<div class="right">
+				<p> EUR</p>
+				<p>My Account</p>
+			</div>
+		</div>
+
+		<div id="middle">
+			<div class="middle-left">
+				Electro<b>.</b>
+			</div>
+
+			<div class="search">
+				<select>
+					<option> All Categories</option>
+					<option>Home</option>
+					<option>Hot Deals</option>
+					<option>Categories</option>
+					<option>Laptops</option>
+					<option>Smartphones</option>
+					<option>Cameras</option>
+					<option>Accessories</option>
+				</select>
+			
+				<input type="text">
+				<input type="button" value="Search">
+			</div>
+
+			<div class="middle-right">
+				<i class="material-icons">shopping_cart</i>
+				<p id="shoppingCartCounter">0</p>
+			</div>
+
+		</div>
+
+		<div id="bottom">
+			<nav>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Hot Deals</a></li>
+					<li><a href="">Categories</a></li>
+					<li><a href="">Laptops</a></li>
+					<li><a href="">Smartphones</a></li>
+					<li><a href="">Cameras</a></li>
+					<li><a href="">Accessories</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+
+	<main>
+		
+
+		<div id="text_in_the_middle">
+			<p><b>NEW PRODUCTS</b></p>
+
+			<ul>
+				<li>Laptops</li>
+				<li>Smartphones</li>
+				<li>Cameras</li>
+				<li>Accessories</li>
+			</ul>
+		</div>
+
+		<div id="select_images">
+		</div>
+	</main>
+
+	<footer>
+		
+
+	</footer>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Constructors</h2>
+
+<p id="demo"></p>
+
+<script>
+
+
+
+function Human (eyeColor, age, name, handedness) {
+	this.eyeColor = eyeColor;
+	this.age = age;
+	this.name = name;
+	this.handedness = handedness;
+    //this.fullName = function () {
+    //return this.name + " is " + handedness; }
+};
+
+
+let Karri = new Human ("blue", 26, "Karri", "Right-handed");
+let Alex = new Human ("green", 20, "Alex", "Left-handed");
+
+Human.prototype.fullName = function () {
+	return this.name + " is " + this.age;
+};
+
+
+
+console.log(Alex.age)
+
+console.log(Alex.fullName());
+
+//document.getElementById("demo").innerHTML = Alex.fullName(); 
+
+</script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>

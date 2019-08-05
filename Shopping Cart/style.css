@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%; }
+  header #first {
+    background-color: #1D202B;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: white; }
+    header #first .left, header #first .right {
+      width: 100%; }
+      header #first .left p, header #first .right p {
+        display: inline-block;
+        padding: 1%; }
+    header #first .left p {
+      padding-left: 0; }
+    header #first .right {
+      text-align: right; }
+  header #middle {
+    padding: 2vw;
+    color: white;
+    background-color: #15161C;
+    border-bottom: 0.5vw solid #992721;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header #middle .middle-left {
+      width: 100%;
+      font-size: 3vw; }
+      header #middle .middle-left b {
+        color: #992721;
+        font-size: 4vw; }
+    header #middle .search {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap; }
+    header #middle .middle-right {
+      width: 100%;
+      text-align: right; }
+  header #bottom {
+    border-bottom: 0.1vw solid grey; }
+    header #bottom nav {
+      padding: 1vw 0; }
+      header #bottom nav ul {
+        list-style: none;
+        padding-left: 0; }
+        header #bottom nav ul li {
+          display: inline; }
+          header #bottom nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding-right: 1vw; }
+
+main #pictures {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  main #pictures img {
+    width: 30%;
+    object-fit: cover; }
+main #text_in_the_middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  main #text_in_the_middle li {
+    display: inline; }
+    main #text_in_the_middle li a {
+      text-decoration: none;
+      color: black;
+      padding-left: 2vw; }
+main #select_images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  main #select_images .notnext {
+    width: 23%;
+    border: 0.1vw solid grey;
+    text-align: center; }
+    main #select_images .notnext img {
+      width: 80%;
+      height: 20vw; }
+    main #select_images .notnext p {
+      font-size: 1.5vw; }
+      main #select_images .notnext p .Cat {
+        color: grey; }
+
+/*# sourceMappingURL=style.css.map */

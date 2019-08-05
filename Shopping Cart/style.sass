@@ -1,0 +1,129 @@
+$main-color: #15161C
+$reddish: #992721
+
+*
+	margin: 0 
+	padding: 0
+
+header
+	width: 100%
+
+	#first
+		background-color: #1D202B
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		color: white
+
+		.left, .right
+			width: 100%
+
+			p
+				display: inline-block
+				padding: 1%
+
+		.left
+
+			p
+				padding-left: 0
+
+		.right
+			text-align: right
+
+	#middle
+		padding: 2vw 
+		color: white
+		background-color: $main-color
+		border-bottom: 0.5vw solid $reddish
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+		.middle-left
+			width: 100%
+			font-size: 3vw
+
+			b
+				color: $reddish
+				font-size: 4vw
+
+		.search
+			width: 100%
+			display: flex
+			flex-flow: row nowrap
+
+		.middle-right
+			width: 100%
+			text-align: right
+
+	#bottom
+		border-bottom: 0.1vw solid grey
+		nav
+			padding: 1vw 0 
+
+
+			ul
+				list-style: none
+				padding-left: 0
+				
+				li 
+					display: inline
+					a 
+						text-decoration: none
+						color: black
+						padding-right: 1vw
+
+main
+
+	#pictures
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+
+		img
+			width: 30%
+			object-fit: cover
+
+	#text_in_the_middle 
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		ul
+		list-style: none
+
+		li 
+			display: inline
+
+			a 
+				text-decoration: none
+				color: black
+				padding-left: 2vw
+
+	#select_images
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+		.notnext
+			width: 23%
+			border: 0.1vw solid grey
+			text-align: center
+
+			img 
+				width: 80%
+				height: 20vw
+
+			p
+				font-size: 1.5vw
+				.Cat
+					color: grey
+
+
+	
+
+
+
+
+
